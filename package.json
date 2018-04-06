@@ -1,0 +1,61 @@
+{
+  "name": "visa-messenger-chatbot",
+  "version": "1.0.0",
+  "description": "Visa white label chatbot application for chatbots",
+  "author": "Mayur Jain",
+  "license": "VISA Inc",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/main.js",
+    "start": "babel-node src/main.js",
+    "test": "mocha --compilers js:babel-core/register 'test/test.js' --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/visa-innovation-sf/fbchatbot"
+  },
+  "dependencies": {
+    "apiai": "4.0.3",
+    "async": "2.5.0",
+    "aws-sdk": "2.98.0",
+    "babel-cli": "6.24.1",
+    "babel-preset-es2015": "6.24.1",
+    "body-parser": "1.17.2",
+    "botkit": "0.2.2",
+    "chrono-node": "1.3.5",
+    "cluster": "0.7.7",
+    "country-data": "0.0.31",
+    "debug": "2.6.8",
+    "dotenv": "4.0.0",
+    "ejs": "^2.4.2",
+    "express": "^4.13.4",
+    "forever": "0.15.3",
+    "http-status": "1.0.1",
+    "moment": "2.18.1",
+    "mongodb": "2.2.30",
+    "monkii": "1.2.1",
+    "morgan": "1.8.2",
+    "mysql2": "1.4.1",
+    "node-emoji": "1.8.1",
+    "node-uuid": "1.4.8",
+    "promise": "^8.0.1",
+    "randomstring": "1.1.5",
+    "request": "2.81.0",
+    "request-debug": "0.2.0",
+    "sequelize": "4.5.0",
+    "sync-request": "4.1.0",
+    "underscore": "1.8.3",
+    "ursa": "0.9.4",
+    "xml2js": "^0.4.19"
+  },
+  "engines": {
+    "node": "8.0.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chai-http": "3.0.0",
+    "mocha": "3.3.0",
+    "nodemon": "1.11.0"
+  }
+}

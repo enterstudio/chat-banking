@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <!--Get Started-->
+    <string name="welcomeMessage1">Hi {{@first_name}}! &#10;Iʼm Ruby, your personal card assistant.</string>
+    <string name="welcomeMessage2">I'll help you track your credit card activity and balance.</string>
+
+    <!--Enroll Message-->
+    <string name="enrollMessageText">Let's connect your credit card to get started.&#10;&#10;(Don't worry, Facebook won't be able to see this information.)</string>
+    <string name="connectAccountButtonTitle">Connect Account</string>
+    <string name="connectAccountAgainButtonTitle">Reconnect Account</string>
+
+    <!--Successful Card Enrollment-->
+    <string name="successCardMessage1">{{$0}} All set, {{@first_name}}! &#10;Your FDNB credit card is connected!</string>
+    <string name="successCardMessage2">I've turned on spending notifications, so you will get a message each time your card is used.</string>
+    <string name="soundsGoodQR1">{{$0}} Sounds good!</string>
+    <string name="manageNotificationsQR2">Manage Notifications</string>
+    <string name="soundsGoodQR1Emoji">thumbsup</string>
+    <string name="successCardMessage1Emoji">heavy_check_mark</string>
+
+    <!--Failed Card Enrollment-->
+    <string name="failedCardText">Sorry {{@first_name}}. Try verifying your credit card details again.</string>
+    <string name="failedCardButton1Title">Connect Account</string>
+
+    <!--Generic Main Menu Template-->
+    <string name="getAccountInformationTitle">Get Account Information</string>
+    <string name="getAccountInformationSubtitle">Check your account balance and see recent transactions</string>
+    <string name="getAccountInformationButton1Title">See Account Info</string>
+    <string name="notifyBankOfTravelTitle">Notify Bank of Travel</string>
+    <string name="notifyBankOfTravelSubtitle">Travelling? Tell me your plans to ensure uninterruped card usage.</string>
+    <string name="notifyBankOfTravelButton1Title">Set Travel Notice</string>
+    <string name="manageSpendingNotificationsTitle">Manage Spending Notifications</string>
+    <string name="manageSpendingNotificationsSubtitle">Get customized spending notifications based on amount or category.</string>
+    <string name="manageSpendingNotificationsButton1Title">Manage Notifications</string>
+
+    <!--Options Menu-->
+    <string name="optionsButtonText">Is there anything else I can help with today?</string>
+    <string name="optionsButton1Title">Show Menu</string>
+
+    <!--Manage Notifications Menu-->
+    <string name="manageNotificationsText">Sure thing!&#10;What would you like to do?</string>
+    <string name="manageNotificationsButton1Title">View Settings</string>
+    <string name="manageNotificationsButton2Title">Change Notifications</string>
+    <string name="manageNotificationsButton3Title">Mute Notifications</string>
+    <string name="manageNotificationsButton4Title">Turn On Notifications</string>
+
+    <!--Change Alert Amount Quick Reply-->
+    <string name="changeAlertAmountText">Sure thing!&#10; What's the minumum amount you want to receive notifications for? </string>
+    <string name="changeAlertAmountQr0Title">All purchases</string>
+    <string name="changeAlertAmountQr0Payload">Set an alert for $0.01</string>
+    <string name="changeAlertAmountQr1Title">$25</string>
+    <string name="changeAlertAmountQr1Payload">Set an alert for $25</string>
+    <string name="changeAlertAmountQr2Title">$50</string>
+    <string name="changeAlertAmountQr2Payload">Set an alert for $50</string>
+    <string name="changeAlertAmountQr3Title">$75</string>
+    <string name="changeAlertAmountQr3Payload">Set an alert for $75</string>
+    <string name="changeAlertAmountQr4Title">$100</string>
+    <string name="changeAlertAmountQr4Payload">Set an alert for $100</string>
+
+    <!--Change Alert Amount Merchant Quick Reply-->
+    <string name="changeAlertAmountMerchantText">{{$0}} Tap or type a purchase amount for your {{$1}} notifications. &#10; (You can type "Stop" or "Nevermind" if you no longer want to set this up.)</string>
+    <string name="changeAlertAmountMerchantQr0Title">All purchases</string>
+    <string name="changeAlertAmountMerchantQr0Payload">Set an alert for $1 on {{$0}}</string>
+    <string name="changeAlertAmountMerchantQr1Title">$25</string>
+    <string name="changeAlertAmountMerchantQr1Payload">Set an alert for $25 on {{$0}}</string>
+    <string name="changeAlertAmountMerchantQr2Title">$50</string>
+    <string name="changeAlertAmountMerchantQr2Payload">Set an alert for $50 on {{$0}}</string>
+    <string name="changeAlertAmountMerchantQr3Title">$75</string>
+    <string name="changeAlertAmountMerchantQr3Payload">Set an alert for $75 on {{$0}}</string>
+    <string name="changeAlertAmountMerchantQr4Title">$100</string>
+    <string name="changeAlertAmountMerchantQr4Payload">Set an alert for $100 on {{$0}}</string>
+
+    <!--Disconnect Account-->
+    <string name="disconnectAccountText">Are you sure you want to disconnect your account from Facebook Messenger?</string>
+    <string name="disconnectAccountQr1Title">Yes, Please</string>
+    <string name="disconnectAccountQr2Title">Nevermind.</string>
+    <string name="disconnectAccountConfirmMessage1">Alright. Your card has been disconnected.</string>
+    <string name="connectAgain">You can come back and reconnect any time.</string>
+    <string name="disconnectAccountAbortMessage1">Oh good!</string>
+    <string name="disconnectAccountMessage1">Sorry to see you go!</string>
+
+    <!--Alerts-->
+    <string name="alertConfirmationMessage1">Done! &#10;Iʼll send you a message anytime a purchase exceeds ${{$0}} &#10;&#10;You can change your settings any time just by typing what you want to do.</string>
+    <string name="alertConfirmationMessage2">Perfect {{@first_name}}! &#10;Iʼll send you a message anytime you make a {{$1}} purchase above ${{$0}}.</string>
+    <string name="alertDetailsMessage1">Sure thing! This is the information I have</string>
+    <string name="alertDetailsButton1Title">I don't recognize this</string>
+    <string name="alertDetailsButton2Title">Got it. Thanks!</string>
+    <string name="alertDeleteConfirmationMessageForMCC">Got it! I won't send any more spending notifications. &#10;I will no longer send notifications for {{$0}} purchases.</string>
+    <string name="alertNotFound">{{$0}}Hmmm... You don't seem to have a notification setup for that.</string>
+
+    <!--Unrecognized transaction message - Contact Customer Support-->
+    <string name="unrecognizedTransactionMessage">Sorry to hear that! Call the Service Center and we'll help you get through this. &#10;Here's the number:&#10;{{$0}}</string>
+    <string name="contactBankMessage">To contact our Service Center by phone, please call {{@bankPhone}}</string>
+
+    <!--Customize Alerts-->
+    <string name="customizeAlertsText">If you want notifications for charges over a certain amount, type or tap Change Amount. &#10; &#10;To receive extra notifications for purchases within certain categories, tap or type Add Category.</string>
+    <string name="customizeAlertsTextOtherOptions">Change this any time you want by typing something like: &#10;&#10;"Change Clothing notifications" &#10;or&#10;"Remove Gas notifications"</string>
+    <string name="customizeAlertsButton1Title">Change Amount ($)</string>
+    <string name="customizeAlertsButton2Title">Add Category</string>
+
+    <!--Alert Categories-->
+    <string name="alertCategoryText">Alright. Here are some popular spending categories. Which one would you like to track?</string>
+    <string name="alertCategoryQr1Title">Entertainment</string>
+    <string name="alertCategoryQr1Payload">Set an alert on entertainment</string>
+    <string name="alertCategoryQr2Title">Clothing</string>
+    <string name="alertCategoryQr2Payload">Set an alert on clothing</string>
+    <string name="alertCategoryQr3Title">Grocery</string>
+    <string name="alertCategoryQr3Payload">Set an alert on grocery</string>
+    <string name="alertCategoryQr4Title">Gas</string>
+    <string name="alertCategoryQr4Payload">Set an alert on gas</string>
+    <string name="alertCategoryQr5Title">Household</string>
+    <string name="alertCategoryQr5Payload">Set an alert on household</string>
+    <string name="alertCategoryQr6Title">See More</string>
+    <string name="moreAlertCategoryText">Here are additional categories.</string>
+    <string name="alertCategoryQr7Title">Automotive</string>
+    <string name="alertCategoryQr7Payload">Set an alert on automotive</string>
+    <string name="alertCategoryQr8Title">Airfare</string>
+    <string name="alertCategoryQr8Payload">Set an alert on airfare</string>
+    <string name="alertCategoryQr9Title">Hotel</string>
+    <string name="alertCategoryQr9Payload">Set an alert on hotel</string>
+    <string name="alertCategoryQr10Title">Personal Care</string>
+    <string name="alertCategoryQr10Payload">Set an alert on personal care</string>
+    <string name="alertCategoryQr11Title">Electronics</string>
+    <string name="alertCategoryQr11Payload">Set an alert on electronics</string>
+
+    <!--DCAS Menu-->
+    <string name="dcasMenuText">Alright. What would you like to know?</string>
+    <string name="dcasMenuButton1Title">Account Balances</string>
+    <string name="dcasMenuButton2Title">Recent Transactions</string>
+
+    <!--Turn On Alerts-->
+    <string name="turnAlertsOnText">Currently, your notifications are turned off. &#10;Would you like to turn them on?</string>
+    <string name="turnAlertsOnQr1Title">Yes</string>
+    <string name="turnAlertsOnQr2Title">No</string>
+
+    <!--Change Alert Settings Confirmation-->
+    <string name="changeAlertSettingConfirmText">Would you like to change your settings?</string>
+    <string name="changeAlertSettingConfirmQr1Title">Yes</string>
+    <string name="changeAlertSettingConfirmQr2Title">No</string>
+
+    <!--Account Balance-->
+    <string name="accountBalanceTitle">See Outstanding Card Balance</string>
+    <string name="accountBalanceSubTitle">Quickly check your outstanding credit card balance.</string>
+    <string name="accountBalanceButtonTitle">See Balance</string>
+    <string name="accountBalanceForPrepaid">Your available balance is {{@available_amount}} {{@available_amount_currency}}.</string>
+    <string name="accountBalanceForCredit">You owe {{@amount_owing}} {{@amount_owing_currency}}. &#10;&#10;Your remaining available credit is {{@available_credit}} {{@available_credit_currency}}.</string>
+
+    <!--Alert Settings-->
+    <string name="alertAmountErrorMessage1">Sorry. Amount should be greater than zero.&#10; Try again.</string>
+    <string name="alertSettingMessage1">Currently, you get a notification for every purchase above ${{$0}}.</string>
+    <string name="alertSettingMessage2">Currently, you get a notification for every purchase.</string>
+    <string name="alertSettingMessage3">You also receive them for purchases above:&#10;</string>
+    <string name="alertSettingMessage4">Got it! I won't send any more spending notifications.</string>
+    <string name="alertSettingMessage5">Ok. Notifications are now on.</string>
+    <string name="alertSettingMessage6">I'll save your settings, so you can easily turn them back on if you want.</string>
+    <string name="keepNotificationsOff">Ok. &#10;I'll keep them turned off.</string>
+
+    <!--Travel Notifications-->
+    <string name="travelNotificationWrongDatesErrorMessage">Sorry. &#10;Your return date must be later than your departure Date. &#10;Let's try again.</string>
+    <string name="createTravelNotificationMessage1">Great! &#10;I have informed the bank about your travel plans for &#10;{{@countryEmojiList}} &#10;{{@departure_date}} - {{@return_date}}</string>
+    <string name="getTravelNotificationMessage1">Here is what I have: </string>
+    <string name="getTravelNotificationMessage2">You are travelling to {{$0}}</string>
+    <string name="travelNotificationMenuMessage1">Letting me know when you travel internationally is a great way to avoid credit card blocks once you get there.</string>
+    <string name="travelNotificationMenuMessage2">If you've already informed me of your travel plan, I can help you review or update them too!</string>
+    <string name="travelNotificationMenuText">What would you like to do?</string>
+    <string name="travelNotificationMenuButton1Title">Notify Bank</string>
+    <string name="travelNotificationMenuButton2Title">Update Travel Notice</string>
+    <string name="travelNotificationMenuButton3Title">See Travel Notice</string>
+    <string name="emptyTravelItineraryText">It doesn't look like you've notified me of any travel plans yet. &#10;Would you like to do that now?</string>
+    <string name="emptyTravelItineraryQr1Title">Yes</string>
+    <string name="emptyTravelItineraryQr2Title">No</string>
+    <string name="travelItinerary">Got it. &#10;You are travelling to &#10;{{@countryEmojiList}} &#10; &#10;Dates: &#10;{{@start_date}} - {{@end_date}}</string>
+    <string name="travelItineraryConfirmationText">Is this right?</string>
+    <string name="travelItineraryConfirmationYes">Yes, thanks! {{$0}}</string>
+    <string name="travelItineraryConfirmationNo">Not quite {{$0}}</string>
+    <string name="travelItineraryConfirmationYesEmoji">thumbsup</string>
+    <string name="travelItineraryConfirmationNoEmoji">thumbsdown</string>
+
+    <!--Standalone Strings-->
+    <string name="mainMenuMessage">See below for things I can help with. &#10;You can always type your questions if that's easier!</string>
+    <string name="customAlertMessageButton1Title">Show Details</string>
+    <string name="optionsTextMessage">How else can I help today?</string>
+    <string name="transactionAlertMessage">Heads up! &#10;New transaction on card &#10;{{@cardLast4}} &#10; &#10;{{@merchantName}} &#10;${{@transactionAmount}} &#10;{{@date}} {{@time}}</string>
+    <string name="merchantDetailsText">Transaction Details for &#10;card </string>
+    <string name="featureComingSoon">This feature is coming soon.</string>
+    <string name="confusedEmoji">confused</string>
+
+    <!--Unsupported Request-->
+    <string name="unsupportedRequestMessage1">I'm sorry. I can't help with that yet, but I'm always learning new things so try back later.</string>
+    <string name="unsupportedRequestMessage2">For now, log in to your online or mobile account. &#10;{{$0}}</string>
+    <string name="unsupportedRequestMessage3">Hmmm... I didn't quite get that. Try typing your question another way.</string>
+    <string name="unsupportedRequestMessage4">Great question! &#10;I don't have an answer now but I'm learning all the time.</string>
+    <string name="carouselMenuTextForUnsupportedRequest">Here are some things I can help with:</string>
+
+    <!--System Error-->
+    <string name="systemErrorMessage1">{{@emoji}} I'm currently experiencing system issues. Can you check back later?</string>
+    <string name="systemErrorMessage2">You can always log in to your online account. &#10;{{@bankURL}}</string>
+    <string name="systemErrorMessage3">{{@emoji}} Golly...Something is not working on my end. You can always call us at {{@bankPhone}}</string>
+    <string name="systemErrorMessage4">{{@emoji}} Looks like I'm working overtime! Can you check back later?</string>
+    <string name="sweatFaceEmoji">:sweat:</string>
+
+    <!--Attachment Upload Error Message-->
+    <string name="attachmentErrorMessage">{{@attachmentEmoji1}} {{@attachmentEmoji2}} I'm still learning to translate attachments. Can you ask me another way?</string>
+    <string name="speak_no_evil_emoji">:speak_no_evil:</string>
+    <string name="hear_no_evil_emoji">:hear_no_evil:</string>
+
+    <!--Jokes-->
+    <string name="joke1">Why was the robot bankrupt?</string>
+    <string name="joke1_1">Because it used all its cache {{@emoji}}</string>
+    <string name="joke2">What do you call a pirate robot?</string>
+    <string name="joke2_1">Arrrrrrr 2D2 {{@emoji}}</string>
+    <string name="joke3">Why is money called dough?</string>
+    <string name="joke3_1">Because we all knead it! {{@emoji}}</string>
+    <string name="joyFaceEmoji">joy</string>
+
+    <string name="bankURL">www.genbank.com</string>
+    <string name="bankPhone">1-800-555-5555</string>
+
+</resources>

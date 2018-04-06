@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Enroll Card</title>
+    <script src="/assets/jquery-3.2.1.min.js"></script>
+</head>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+<body>
+<script>
+    (function (d, s, id) {
+        let js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'Messenger'));
+
+
+    window.extAsyncInit = function () {
+        // the Messenger Extensions JS SDK is done loading
+
+        setTimeout(() => {
+            MessengerExtensions.requestCloseBrowser();
+        }, 7000);
+
+    };
+
+</script>
+
+<div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <br>
+            <h1>Your Card Is Already Enrolled.</h1>
+            <h2>If you want to change your card then please DISCONNECT your account and then ENROLL AGAIN WITH DIFFERENT CARD.</h2>
+            <br/>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

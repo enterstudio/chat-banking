@@ -1,0 +1,18 @@
+.git
+.gitignore
+
+README.md
+
+
+node_modules
+
+npm-debug.log
+.idea
+
+dist
+
+.env
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+Contact GitHub API Training Shop Blog About

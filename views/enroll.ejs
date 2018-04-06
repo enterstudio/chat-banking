@@ -1,0 +1,126 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<head>
+    <title>Connect Account</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi"/>
+    <script src="/assets/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/customStyles.css">
+</head>
+
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+
+<body>
+<script>
+    (function (d, s, id) {
+        let js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'Messenger'));
+
+    window.onload = function () {
+        document.getElementById("background_image").src = "<%- IMAGE_ENROLL_PAGE %>";
+        document.getElementById("logo-image").src = "<%- IMAGE_LOGO %>";
+    };
+
+    $(document).ready(function () {
+        $(".input-box")
+            .focus(() => $('#footer').addClass('hide-footer'))
+            .focusout(() => $('#footer').removeClass('hide-footer'));
+    });
+
+    // disable page scrolling
+    document.body.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+    });
+
+    function verifyCard() {
+        let fb_user_id = "<%- FBUSERID %>";
+        enrollCard(fb_user_id);
+    }
+</script>
+
+<div class="mainDiv">
+
+    <div class="row headerSection">
+        <div class="col-md-12 text-center">
+            <div class="parent">
+                <img id="background_image" class="image1" src=" " width="372" height="185"/>
+                <img id="logo-image" class="image2" src=" " style="position: absolute; top: 8%; left: 38%;" width="100" height="120"/>
+            </div>
+            <br/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+
+            <div class="credit-card-div">
+                <div class="panel-heading">
+                    <form onsubmit="return false" id="enrollCardForm">
+
+                        <div class="errorMessage" style="display: none"></div>
+
+                        <div class="row" name="cardnumber">
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <input type='tel' class="input-box" placeholder="Credit Card Number" id="card_number" name="card_number" maxlength="19"
+                                       required/>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <input type='tel' class="input-box" placeholder="CVV" id="cvv" name="cvv" minlength="3" maxlength="3" required/>
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div class="row">
+
+                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                <input type='tel' class="input-box" placeholder="Exp Date (mm/yyyy)" id="card_expiration" name="card_expiration" maxlength="7"
+                                       required/>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <input type='tel' class="input-box" placeholder="Zipcode" id="zipCode" name="zipCode" minlength="5" maxlength="5" required/>
+                            </div>
+
+                        </div>
+                        <br>
+
+
+                        <div class="footer" id="footer">
+                            <div class="col-md-10 pad-adjust text-center" style="font-size: 10px">
+                                By clicking Connect, you accept this <a href="/terms">agreement</a> and to sharing usage data.
+                            </div>
+                            <br>
+                            <div class="row text-center col-md-offset-2">
+                                <div class="col-md-10 pad-adjust text-center">
+                                    <button class='form-control btn btn-primary submit-button' id="connect-button" name="connect-button" type='submit'
+                                            onclick="verifyCard();">
+                                        Connect
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- CREDIT CARD DIV END -->
+
+        </div>
+    </div>
+</div>
+
+<script src="/assets/enrollment.js"></script>
+
+</body>
+
+</html>
+
+

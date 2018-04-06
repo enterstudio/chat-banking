@@ -1,0 +1,111 @@
+{
+  "ENV": "dev",
+  "SANDBOX_ENABLED": true,
+  "TRANSACTION_ALERTS": true,
+  "ACCOUNT_INFORMATION": true,
+  "ACCOUNT_BALANCE": true,
+  "TRANSACTION_HISTORY": false,
+  "MERCHANT_SEARCH": true,
+  "PAYMENT_ACCOUNT_VALIDATION": true,
+  "TRAVEL_NOTIFICATIONS": true,
+  "CREATE_TRAVEL_NOTIFICATIONS": true,
+  "GET_TRAVEL_NOTIFICATIONS": true,
+  "UPDATE_TRAVEL_NOTIFICATIONS": false,
+  "REQUEST_DEBUG": false,
+  "DEBUG_API_ENABLED": true,
+  "appKeys": [
+    "/fbchatbot/dev/MESSENGER_APP_ID",
+    "/fbchatbot/dev/MESSENGER_PAGE_ID",
+    "/fbchatbot/dev/MESSENGER_APP_SECRET",
+    "/fbchatbot/dev/MESSENGER_PAGE_ACCESS_TOKEN",
+    "/fbchatbot/dev/MESSENGER_VALIDATION_TOKEN",
+    "/fbchatbot/dev/APIAI_ACCESS_TOKEN",
+    "/fbchatbot/dev/SERVER_URL",
+    "/fbchatbot/dev/pnc/PNC_CLIENT_ID",
+    "/fbchatbot/dev/pnc/PNC_CLIENT_SECRET"
+  ],
+  "serviceKeys": [
+    "/fbchatbot/dev/VDP_USER_ID",
+    "/fbchatbot/dev/VDP_PASSWORD",
+    "/fbchatbot/dev/RDS_HOSTNAME",
+    "/fbchatbot/dev/RDS_DB_NAME",
+    "/fbchatbot/dev/RDS_USERNAME",
+    "/fbchatbot/dev/RDS_PASSWORD"
+  ],
+  "MESSENGER_API": {
+    "HOST": "https://graph.facebook.com",
+    "VERSION": "/v2.6",
+    "SUBSCRIBE_ENDPOINT": "/me/subscribed_apps?access_token=$",
+    "MESSAGES_ENDPOINT": "/me/messages",
+    "PROFILE_ENDPOINT": "/me/messenger_profile",
+    "THREAD_SETTINGS_ENDPOINT": "/me/thread_settings"
+  },
+  "NLP_AGENT_API": {
+    "HOST": "https://api.api.ai",
+    "QUERY_ENDPOINT": "/v1/query?v=20150910"
+  },
+  "VDP_API": {
+    "HOST": "https://sandbox.api.visa.com",
+    "KEY_FILE_NAME": "<<VALUE_TO_BE_FILLED>>",
+    "CERTIFICATE_FILE_NAME": "<<VALUE_TO_BE_FILLED>>"
+  },
+  "BANK_IDENTIFIER": "GenBank",
+  "CARD_VALIDATION_API": {
+    "URL": "/pav/v1/cardvalidation",
+    "TEST_CARD": {
+      "NUMBER": "<<VALUE_TO_BE_FILLED>>",
+      "EXPIRY_YEAR": "<<VALUE_TO_BE_FILLED>>",
+      "EXPIRY_MONTH": "<<VALUE_TO_BE_FILLED>>",
+      "CVV": "<<VALUE_TO_BE_FILLED>>",
+      "ZIPCODE": "<<VALUE_TO_BE_FILLED>>"
+    }
+  },
+  "MERCHANT_SEARCH_API": {
+    "URL": "/merchantsearch/v1/search",
+    "SUCCESS_CODE": "CDI000",
+    "FAILURE_CODE": "CDI092",
+    "RESPONSE_ATTR_LIST": [
+      "GNSTANDARD"
+    ],
+    "COUNTRY_CODE": "840"
+  },
+  "CTC_API": {
+    "HOST": "<<VALUE_TO_BE_FILLED>>",
+    "DOCUMENT_ENDPOINT": "/api/v1/documents",
+    "ALERTS_ENDPOINT": "/api/v1/alerts",
+    "AUTH_DECISION_ENDPOINT": "/api/v1/decisions"
+  },
+  "DCAS_API": {
+    "HOST": "<<VALUE_TO_BE_FILLED>>",
+    "BASE_URL": "/api/v1",
+    "CARDS": "/cards",
+    "BALANCES": "/balances",
+    "SANDBOX_TEST_CARD": "<<VALUE_TO_BE_FILLED>>"
+  },
+  "TNS_API": {
+    "HOST": "<<VALUE_TO_BE_FILLED>>",
+    "ITINERARY_URL": "/api/v1/itinerary",
+    "TEST_CARD_NUMBER": "<<VALUE_TO_BE_FILLED>>"
+  },
+  "IMAGE_URLS": {
+    "ENROLL_PAGE": "<<VALUE_TO_BE_FILLED>>",
+    "BANK_LOGO": "<<VALUE_TO_BE_FILLED>>",
+    "ACCOUNT_INFO": "<<VALUE_TO_BE_FILLED>>",
+    "MANAGE_ALERTS": "<<VALUE_TO_BE_FILLED>>",
+    "TRAVEL_NOTIFICATIONS": "<<VALUE_TO_BE_FILLED>>"
+  },
+  "TC_PAGE_URL": "<<VALUE_TO_BE_FILLED>>",
+  "GREETINGS": "Hi {{user_first_name}}, I can help you manage your credit card activity by sending purchase notifications and tracking your account balance.",
+  "SHUTDOWN": false,
+  "ENCRYPTION_PUBLIC_KEY_NAME": "chatbot-service-public-key-dev.pem",
+  "DECRYPTION_PRIVATE_KEY_NAME": "chatbot-service-private-key-dev.pem",
+  "OAUTH_PAN_DECRYPTION_KEY_NAME": "NOT_USED",
+  "OAUTH_API": {
+    "BASE_URL": "<<VALUE_TO_BE_FILLED>>",
+    "AUTH_ENDPOINT": "/oauth2/authorize",
+    "OAUTH_ACCESS_TOKEN_ENDPOINT": "/oauth2/token",
+    "LIST_ACCOUNTS_ENDPOINT": "/api/v1/accountsdetails",
+    "GET_PAN_NUMBER_ENDPOINT": "/api/v1/account/nbr",
+    "GET_ACCOUNT_BALANCE": "/api/v1/account"
+  }
+}

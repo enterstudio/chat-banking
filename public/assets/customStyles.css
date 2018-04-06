@@ -1,0 +1,144 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select,
+    textarea,
+    input {
+        font-size: 16px;
+    }
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    background-color: #fff;
+}
+
+parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.input-box {
+
+    display: block;
+    width: 100%;
+    height: 34px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: rgb(85, 85, 85);
+    background-color: #fff;
+    background-image: none;
+    box-shadow: none;
+    padding: 6px 12px;
+    border-width: 0px;
+    border-style: hidden;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: inherit;
+    transition: none;
+    -webkit-box-shadow: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #a10707;
+}
+
+#connect-button{
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #a10707;
+}
+
+#background_image { height: 30%; width: 100%; position: relative; }
+
+#background_image img {
+    /* CSS Hack will make it width 100% and height 100% */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* Maintain aspect ratio */
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+credit-card-div span {
+    padding-top: 10px;
+}
+
+credit-card-div img {
+    padding-top: 30px;
+}
+
+credit-card-div .small-font {
+    font-size: 9px;
+}
+
+credit-card-div .pad-adjust {
+    padding-top: 10px;
+}
+
+.footer {
+    position: fixed;
+    right: 0;
+    bottom: 5%;
+    left: 0;
+    /*padding: 1rem;*/
+    text-align: center;
+}
+
+.hide-footer {
+    display: none;
+}
+
+.errorMessage {
+    display: none;
+    list-style-type: disc;
+    margin: 3px 1px 10px 1px;
+    padding: 2px 1px 1px 2px;
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 2px solid #EED3D7;
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.errorMessage span {
+    font-weight: bold;
+}
+
+.add-margin{
+    margin: 4px;
+}
+
+.faq-section-header {
+    color: dodgerblue;
+}
+
+.question {
+    font-weight: bold;
+    font-size: medium;
+    background: transparent;
+    border: transparent;
+    text-align: left;
+}
+
+.answer {
+    text-align: left;
+    padding-left: 5%;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    padding-top: 5%;
+    padding-bottom: -5%;
+}
+
+.faq {
+    padding-bottom: 3%;
+}
